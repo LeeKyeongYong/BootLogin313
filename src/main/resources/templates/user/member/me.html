@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko-kr" layout:decorate="~${usr/common/layout}">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title th:text="로그인"></title>
 </head>
 <body>
-
+    <main layout:fragment="main">
+        마이페이지
+        <div>번호: [[${@rq.member.id}]]</div>
+        <div>이름: [[${@rq.member.username}]]</div>
+        <div>별명: <span th:text="${@rq.member.usrname}"></span></div>
+        <div></div>
+    </main>
 </body>
 </html>
