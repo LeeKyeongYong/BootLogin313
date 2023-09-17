@@ -1,6 +1,28 @@
 # Created by https://www.toptal.com/developers/gitignore/api/eclipse,intellij
 # Edit at https://www.toptal.com/developers/gitignore?templates=eclipse,intellij
 # User-specific configurations
+### Gradle ###
+.gradle
+gradlew
+gradlew.bat
+.gradle/
+gradle/
+build/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Cache of project
+.gradletasknamecache
+
+# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
+# gradle/wrapper/gradle-wrapper.properties
+
+### Gradle Patch ###
+**/build/
 .idea/caches/
 .idea/libraries/
 .idea/shelf/
