@@ -33,7 +33,7 @@ public class MemberController {
     @GetMapping("/modify")
     @PreAuthorize("isAuthenticated()")
     public String showModify(){
-        return "usr/member/modify";
+        return "user/member/modify";
     }
 
     @PostMapping("/modify")

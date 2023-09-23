@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html layout:decorate="~{usr/common/layout}">
+<html layout:decorate="~{user/common/layout}">
 <head>
     <meta charset="UTF-8">
     <title th:text="로그인"></title>
 </head>
 <body>
     <main layout:fragment="main">
+        <h1>회원정보수정</h1>
       <form th:action method="POST">
         <div>
             <input type="password" name="password" placeholder="Password">
