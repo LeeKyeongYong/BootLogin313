@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequiredArgsConstructor
 public class MemberController {
     private final Rq rq;
-    private MemberService memberService;
+    private final MemberService memberService;
 
     @GetMapping("/login")
     @PreAuthorize("isAnonymous()")

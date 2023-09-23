@@ -38,12 +38,11 @@ public class MemberService {
 
     @Transactional
     public void modify(Member member,String password,String nickname){
-
-        if(password!=null && password.length() > 0){
+        if (password != null && password.length() > 0) {
             member.setPassword(passwordEncoder.encode(password));
         }
 
-        if(nickname!=null && nickname.length() > 0){
+        if (nickname != null && nickname.length() > 0) {
             member.setNickname(nickname);
         }
     }
