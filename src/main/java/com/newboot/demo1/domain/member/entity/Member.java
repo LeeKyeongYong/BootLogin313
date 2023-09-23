@@ -21,7 +21,9 @@ public class Member {
     private Long id;
     @Column(unique = true)
     private String username;
+    @Setter
     private String password;
+    @Setter
     private String nickname;
 
     public boolean isAdmin(){
